@@ -14,7 +14,7 @@ public class ParseJSON {
     public static ParseJSON fromJSON(JSONObject jsonObject){
         ParseJSON JSON = new ParseJSON();
         try {
-            JSON.mPrice = jsonObject.getString("ask");
+            JSON.mPrice = jsonObject.getString("last");
             return JSON;
         } catch (JSONException e) {
             e.printStackTrace();
